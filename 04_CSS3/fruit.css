@@ -1,0 +1,18 @@
+p {
+    font-size: 100px;
+}
+#apple{
+    color: red;
+}
+#banana{
+    color: yellow
+}
+#orange{
+    color: orange;
+}
+#kind{
+    color: aqua;
+}
+.fruit{
+    background-color: aqua;
+}

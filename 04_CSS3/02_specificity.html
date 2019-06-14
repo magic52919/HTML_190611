@@ -9,14 +9,30 @@
     <style type="text/css">
 
         /* 1. tag 為 p的背景顏色為 #4286F3 */
+        p{
+            background-color: #4286f3;
+        }
 
         /* 2. class 為 fruit的背景顏色設定為 #EB4537 */
+        .fruit{
+            background-color: #EB4537;
+        }
 
         /* 3. id 為 bananaID的背景顏色設定為 #FAC230 */
+        #bananaID{
+            background-color: #FAC230;
+        }
 
         /* 4. id 為 orangeID 的背景顏色設定為 #FAC230 */
+        #orangeID{
+            background-color: #FAC230;
+        }
 
         /* 5. 如果透過 p#appleID 背景顏色，會變成? */
+        p#appleID{
+            background-color: black;
+            
+        }
 
     </style>
 
@@ -29,7 +45,7 @@
     <p id="bananaID" class="fruit">Banana</p>
 
     <!-- 6. 請針對底下這個元素，透過style的方式，背景顏色設定為 #55AF7B -->
-    <p id="orangeID" class="fruit">Orange</p>
+    <p id="orangeID" class="fruit" style="background-color:  #55AF7B">Orange</p>
 
     <p>以上是水果種類</p>
 </body>

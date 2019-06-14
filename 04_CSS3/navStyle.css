@@ -11,6 +11,7 @@
     
     .navBar li:hover {
         background-color: #656565;
+        color:blue;
     }
     
     .navBar li a {
@@ -18,3 +19,5 @@
         text-align: center;
         text-decoration: none;
     }
+
+    

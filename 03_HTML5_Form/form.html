@@ -26,8 +26,91 @@
 </head>
 
 <body>
-   
-    
+    <form>
+        <div>
+            <h1>教室通訊錄</h1>
+        </div>
+        <div>
+            <label for="input_name">姓名:</label>
+            <input type="text" id="input_name">
+        </div>
+
+        <div>
+            <label for="input_phone">電話:</label>
+            <input type="text" id="input_phone">
+        </div>
+        <div>
+            <label for="">性別</label>
+            <input type="radio" id="input_male" name="gender">
+            <label for="input_male">男生</label>
+
+            <input type="radio" id="input_female" name="gender">
+            <label for="input_female">女生</label>
+        </div>
+        <div>
+            <label for="">出生日期:</label>
+            <input type="date" name="bday">
+        </div>
+        <div>
+            <label for="">出生時間:</label>
+            <input type="time" name="usr_time">
+        </div>
+
+        <div>
+            <label for="">使用過那些軟體(多選):</label>
+            <input type="checkbox" id="input_word">
+            <label for="input_word">Word</label>
+
+            <input type="checkbox" id="input_excel" >
+            <label for="input_excel">Excel</label>
+
+            <input type="checkbox" id="input_PPT" >
+            <label for="input_PPT">PowerPoint</label>
+
+            <input type="checkbox" id="input_VBC" >
+            <label for="input_VBC">Visual Basic Code</label>
+
+            <input type="checkbox" id="input_PHP" >
+            <label for="input_PHP">PHP</label>
+
+            <input type="checkbox" id="input_Mysql" >
+            <label for="input_Mysql">Mysql</label>
+        </div>
+
+        <div>
+            <label for="input_email">Email</label>
+            <input type="text" id="input_email">
+        </div>
+
+        <div>
+            <label for="favcolor">最喜歡的顏色</label>
+            <input type="color" id="favcolor">
+        </div>
+        <div>
+            <label for="height">身高(tag)</label>
+            <input type="range" id="height" min="140" max="200" step="1" oninput="outputUpdate(value)">
+            <output id="result">顯示數字</output>
+        </div>
+        <div>
+            <label for="city">居住地</label>
+            <select name="cityList" id="city">
+            <optgroup label="Taipai"></optgroup>
+            <option value="Zhongshan">中山</option>
+            <option value="Tamsui">淡水</option>
+            <option value="Nangang">南港</option>
+            <optgroup label="Taichung">Taichung</optgroup>
+            <option value="Central">中區</option>
+            <option value="Nantun">南屯區</option>
+        </select>
+        </div>
+        <input type="submit" value="送出通訊錄">
+    </form>
+
+    <script>
+        function outputUpdate(vol){
+            document.getElementById("result").value = vol;
+        }
+    </script>
 </body>
 
 </html>
@@ -42,5 +125,3 @@
 <!--1.9. 試試看，加入送出按鈕 (submit) -->
 <!--1.10. 試試看，加入居住地 <select> <option> -->
 <!--1.11. 試試看，按下按鈕網址列會有什麼改變? -->
-
-
